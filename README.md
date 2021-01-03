@@ -1,6 +1,6 @@
 # Typescript full stack monorepo starting point
 
- This is a starting point for al my full stack project using:
+ This is a starting point for all my full stack projects using:
 * Yarn
 * Typescript
 * NodeJS
