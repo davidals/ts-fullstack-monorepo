@@ -1,0 +1,20 @@
+{
+  "name": "nodejs-monorepo-starting-point",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "David Sousa <david.anderson.lino@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "husky": "^4.3.6",
+    "lerna": "^3.22.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npx lerna run --concurrency 1 --stream precommit"
+    }
+  },
+  "scripts": {
+    "lint": "lerna run lint --stream",
+    "start": "lerna run start --stream"
+  }
+}
